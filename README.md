@@ -1,4 +1,5 @@
 # codex-themes
+<img width="1152" height="861" alt="Screenshot 2026-02-11 at 10 59 23 PM" src="https://github.com/user-attachments/assets/8a162e13-a6c5-455e-bd9e-e64688cfc586" />
 
 Theme toolkit for the Codex desktop app.
 
