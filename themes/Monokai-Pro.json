@@ -1,0 +1,26 @@
+{
+  "name": "Monokai Pro",
+  "background": "#2d2a2e",
+  "foreground": "#fcfcfa",
+  "cursor": "#c1c0c0",
+  "selectionBg": "#5b595c",
+  "selectionFg": "#fcfcfa",
+  "palette": [
+    "#2d2a2e",
+    "#ff6188",
+    "#a9dc76",
+    "#ffd866",
+    "#fc9867",
+    "#ab9df2",
+    "#78dce8",
+    "#fcfcfa",
+    "#727072",
+    "#ff6188",
+    "#a9dc76",
+    "#ffd866",
+    "#fc9867",
+    "#ab9df2",
+    "#78dce8",
+    "#fcfcfa"
+  ]
+}

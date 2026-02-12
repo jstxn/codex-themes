@@ -1,0 +1,26 @@
+{
+  "name": "Sonokai",
+  "background": "#2c2e34",
+  "foreground": "#e2e2e3",
+  "cursor": "#e2e2e3",
+  "selectionBg": "#414550",
+  "selectionFg": "#e2e2e3",
+  "palette": [
+    "#181819",
+    "#fc5d7c",
+    "#9ed072",
+    "#e7c664",
+    "#76cce0",
+    "#b39df3",
+    "#f39660",
+    "#e2e2e3",
+    "#7f8490",
+    "#fc5d7c",
+    "#9ed072",
+    "#e7c664",
+    "#76cce0",
+    "#b39df3",
+    "#f39660",
+    "#e2e2e3"
+  ]
+}

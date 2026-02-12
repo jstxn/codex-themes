@@ -43,14 +43,19 @@ link_cmd() {
   local command_name="$2"
   local target="$PREFIX/$command_name"
 
+  if [ ! -f "$source_file" ]; then
+    echo "Missing source file: $source_file" >&2
+    exit 1
+  fi
+
   chmod +x "$source_file"
   ln -sfn "$source_file" "$target"
   echo "linked: $command_name -> $source_file"
 }
 
-link_cmd "$SCRIPT_DIR/codex-launch-dev.sh" "codex-launch-dev"
-link_cmd "$SCRIPT_DIR/codex-style-injector.mjs" "codex-style-injector"
-link_cmd "$SCRIPT_DIR/codex-theme-switcher.sh" "codex-theme-switcher"
+link_cmd "$SCRIPT_DIR/src/codex-launch-dev.sh" "codex-themes"
+link_cmd "$SCRIPT_DIR/src/codex-style-injector.mjs" "codex-style-injector"
+link_cmd "$SCRIPT_DIR/src/codex-theme-switcher.sh" "codex-theme-switcher"
 
 echo
 echo "Install complete."
