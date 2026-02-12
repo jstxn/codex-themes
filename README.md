@@ -1,5 +1,6 @@
 # codex-themes
-<img width="1152" height="861" alt="Screenshot 2026-02-11 at 10 59 23 PM" src="https://github.com/user-attachments/assets/8a162e13-a6c5-455e-bd9e-e64688cfc586" />
+<img width="1847" height="1174" alt="Screenshot 2026-02-12 at 9 34 13 AM" src="https://github.com/user-attachments/assets/492ca38b-0d83-499b-8527-2177ce108840" />
+
 
 Custom themes for the Codex desktop app.
 
