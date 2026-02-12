@@ -837,7 +837,7 @@ code span:not([class]):not([style]) {
   display: none;
   align-items: center;
   justify-content: center;
-  background: color-mix(in oklab, var(--color-token-main-surface-primary, #0b0f14) 38%, #000 62%);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
 }
 #${BACKDROP_ID}.open {
