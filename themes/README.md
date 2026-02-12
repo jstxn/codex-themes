@@ -88,9 +88,17 @@ codex-theme-switcher "My Theme"
 
 ## Testing Your Theme
 
-1. Run `codex-themes` to launch Codex with theme support
+**In-app:**
+1. Run `codex-themes` to launch Codex
 2. Click the **Theme** button (rainbow text) in the bottom-right
 3. Select your theme to preview and apply
+
+**Command line:**
+```bash
+codex-theme-switcher "My Theme"
+# or: codex-theme-switcher --menu
+# or list: codex-theme-switcher --list
+```
 
 ## File Naming
 

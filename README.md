@@ -1,48 +1,29 @@
 # codex-themes
 <img width="1152" height="861" alt="Screenshot 2026-02-11 at 10 59 23 PM" src="https://github.com/user-attachments/assets/8a162e13-a6c5-455e-bd9e-e64688cfc586" />
 
-Theme toolkit for the Codex desktop app.
+Custom themes for the Codex desktop app.
 
-It includes:
-- `src/codex-launch-dev.sh`: launch Codex with theme support (one command)
-- `src/codex-theme-switcher.sh`: apply themes from JSON presets (supports user themes)
-- `src/codex-theme-switcher-ui.js`: in-app modal theme switcher with live preview
-- `src/codex-theme-generator.mjs`: generates CSS from simple theme JSON files
-- `src/codex-style-injector.mjs`: hot-reload CSS/JS into Codex over the DevTools protocol
-
-## Requirements
-
-- macOS
-- Codex desktop app installed
-- Node.js 18+ (22+ recommended)
-
-## Quick Install
+## Install
 
 ```bash
-git clone https://github.com/anomaly/codex-themes.git
+git clone https://github.com/jstxn/codex-themes.git
 cd codex-themes
 ./install.sh
 ```
 
-By default, commands are symlinked into `~/.local/bin`.
-
-## Quick Start
+## Usage
 
 ```bash
 codex-themes
 ```
 
-That's it! This launches Codex with theme support enabled. Click the **Theme** button (rainbow text) in the bottom-right corner to pick a theme.
+Click the **Theme** button (rainbow text) in the bottom-right corner to pick a theme.
 
-To apply a theme via command line instead:
-```bash
-codex-theme-switcher --menu
-# or list available: codex-theme-switcher --list
-```
+## Custom Themes
 
-## Creating Custom Themes
+Create themes in `~/.config/codex-themes/` - they'll appear alongside the bundled ones.
 
-Themes are simple JSON files. Only 4 fields are required:
+Minimal theme JSON (only 4 required fields):
 
 ```json
 {
@@ -58,39 +39,10 @@ Themes are simple JSON files. Only 4 fields are required:
 }
 ```
 
-Optional fields: `cursor`, `selectionBg`, `selectionFg` (default to foreground/background).
+See `themes/README.md` for details.
 
-### User Themes (No Git Required)
+## Requirements
 
-1. Create the directory: `mkdir -p ~/.config/codex-themes`
-2. Copy the template: `cp themes/example.template.json ~/.config/codex-themes/My-Theme.json`
-3. Edit the colors
-4. Apply: `codex-theme-switcher "My Theme"`
-
-User themes in `~/.config/codex-themes/` override bundled themes with the same name.
-
-### Contributing Themes
-
-1. Copy `themes/example.template.json` to `themes/Your-Theme-Name.json`
-2. Fill in your colors
-3. Test with `codex-theme-switcher "Your Theme Name"`
-4. Submit a PR
-
-See `themes/README.md` for more details.
-
-## Notes
-
-- Debugging is bound to localhost by default (`127.0.0.1`).
-- Do not inject untrusted JS/CSS.
-- If Codex is not in `/Applications/Codex.app/...`, set `CODEX_BIN`.
-
-## Repository Layout
-
-- `src/codex-launch-dev.sh`
-- `src/codex-style-injector.mjs`
-- `src/codex-theme-generator.mjs`
-- `src/codex-theme-switcher.sh`
-- `src/codex-theme-switcher-ui.js`
-- `src/codex-theme.css` (generated)
-- `themes/*.json` (theme definitions)
-- `~/.config/codex-themes/*.json` (user themes)
+- macOS
+- Codex desktop app
+- Node.js 18+
