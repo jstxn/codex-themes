@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd -P "$(dirname "$SCRIPT_PATH")" && pwd)"
 
 PORT="${CODEX_REMOTE_DEBUG_PORT:-9333}"
 BUILD="${CODEX_BUILD_FLAVOR:-dev}"
-USER_DATA_DIR="${CODEX_USER_DATA_DIR:-$HOME/Library/Application Support/Codex-themed}"
+USER_DATA_DIR="${CODEX_USER_DATA_DIR:-$HOME/Library/Application Support/Codex}"
 BIN="${CODEX_BIN:-/Applications/Codex.app/Contents/MacOS/Codex}"
 THEMES_DIR="${SCRIPT_DIR}/../themes"
 CSS_FILE="${SCRIPT_DIR}/codex-theme.css"

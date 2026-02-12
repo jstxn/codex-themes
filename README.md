@@ -17,7 +17,9 @@ cd codex-themes
 codex-themes
 ```
 
-Click the **Theme** button (rainbow text) in the bottom-right corner to pick a theme.
+Uses your existing Codex data (settings, history, projects). Click the **Theme** button (rainbow text) in the bottom-right to pick a theme.
+
+> **Note:** Use `codex-themes` as your primary launcher. Don't run it alongside the regular Codex app.
 
 ## Custom Themes
 
