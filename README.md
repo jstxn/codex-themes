@@ -1,3 +1,6 @@
+>[!WARNING]
+>This is no longer needed. Codex has FINALLY introduced themes.
+
 # codex-themes
 <img width="1852" height="1177" alt="Screenshot 2026-02-12 at 9 36 35 AM" src="https://github.com/user-attachments/assets/e1e3e6fa-8cd4-41c6-bc0a-081e156cdc98" />
 
